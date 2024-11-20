@@ -61,17 +61,12 @@
     "ghcr.io/devcontainers/features/powershell": {
       "version": "7.4.2"
     },
-    "ghcr.io/devcontainers/features/python": {
-      "installTools": true,
-      "version": "3.12"
-    },
     "ghcr.io/guiyomh/features/vim": {},
     "ghcr.io/hwaien/devcontainer-features/match-host-time-zone": {},
     "ghcr.io/joshuanianji/devcontainer-features/aws-cli-persistence": {},
     "ghcr.io/joshuanianji/devcontainer-features/gcloud-cli-persistence": {},
     "ghcr.io/joshuanianji/devcontainer-features/github-cli-persistence": {},
     "ghcr.io/joshuanianji/devcontainer-features/terraform-cli-persistence": {},
-    "ghcr.io/prulloac/devcontainer-features/pre-commit": {},
     "ghcr.io/robinmordasiewicz/devcontainer-features-sample/preinstall-extensions:latest": {
       "extensions": [
         "github.vscode-pull-request-github"
