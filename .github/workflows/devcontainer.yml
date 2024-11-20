@@ -64,8 +64,8 @@ jobs:
       - name: Build devcontainer
         uses: devcontainers/ci@a56d055efecd725e8cfe370543b6071b79989cc8
         with:
-          imageName: ghcr.io/${{ github.repository_owner }}/devcontainer
-          cacheFrom: ghcr.io/${{ github.repository_owner }}/devcontainer
+          imageName: ghcr.io/${{ github.repository_owner }}/devcontainer-sample
+          cacheFrom: ghcr.io/${{ github.repository_owner }}/devcontainer-sample
           subFolder: src/devcontainer
           platform: linux/amd64
           push: always
