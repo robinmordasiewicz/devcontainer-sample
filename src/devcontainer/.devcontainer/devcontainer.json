@@ -61,6 +61,10 @@
     "ghcr.io/devcontainers/features/powershell": {
       "version": "7.4.2"
     },
+    "ghcr.io/devcontainers/features/python": {
+      "installTools": true,
+      "version": "3.12"
+    },
     "ghcr.io/guiyomh/features/vim": {},
     "ghcr.io/hwaien/devcontainer-features/match-host-time-zone": {},
     "ghcr.io/joshuanianji/devcontainer-features/aws-cli-persistence": {},
