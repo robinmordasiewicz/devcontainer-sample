@@ -11,15 +11,6 @@
           "pwsh": {
             "path": "/opt/microsoft/powershell/7/pwsh"
           },
-          "tmux": {
-            "args": [
-              "new-session",
-              "-A",
-              "-s",
-              "vscode:${workspaceFolder}"
-            ],
-            "path": "/usr/bin/tmux"
-          },
           "zsh": {
             "path": "/usr/bin/zsh"
           }
@@ -30,23 +21,17 @@
   "features": {
     "ghcr.io/akhildevelops/devcontainer-features/pip": {
       "packages": [
-        "ansible",
-        "ansible-creator",
-        "ansible-dev-environment"
+        "ansible"
       ]
     },
     "ghcr.io/devcontainers-contrib/features/apt-packages": {
       "packages": [
-        "cmake",
         "dnsutils",
-        "dos2unix",
-        "file",
         "iputils-ping",
         "mtr",
         "nmap",
         "software-properties-common",
-        "tcpdump",
-        "ubuntu-drivers-common"
+        "tcpdump"
       ]
     },
     "ghcr.io/devcontainers-contrib/features/curl-apt-get": {},
@@ -66,7 +51,6 @@
       "configureZshAsDefaultShell": true,
       "nonFreePackages": "true"
     },
-    "ghcr.io/devcontainers/features/docker-outside-of-docker": {},
     "ghcr.io/devcontainers/features/dotnet": {
       "aspNetCoreRuntimeVersions": "latest",
       "dotnetRuntimeVersions": "latest",
@@ -82,14 +66,11 @@
       "version": "3.12"
     },
     "ghcr.io/guiyomh/features/vim": {},
-    "ghcr.io/hspaans/devcontainer-features/ansible-lint": {},
     "ghcr.io/hwaien/devcontainer-features/match-host-time-zone": {},
     "ghcr.io/joshuanianji/devcontainer-features/aws-cli-persistence": {},
     "ghcr.io/joshuanianji/devcontainer-features/gcloud-cli-persistence": {},
     "ghcr.io/joshuanianji/devcontainer-features/github-cli-persistence": {},
     "ghcr.io/joshuanianji/devcontainer-features/terraform-cli-persistence": {},
-    "ghcr.io/jsburckhardt/devcontainer-features/gitleaks": {},
-    "ghcr.io/jungaretti/features/make": {},
     "ghcr.io/prulloac/devcontainer-features/pre-commit": {},
     "ghcr.io/robinmordasiewicz/devcontainer-features-sample/preinstall-extensions:latest": {
       "extensions": [
