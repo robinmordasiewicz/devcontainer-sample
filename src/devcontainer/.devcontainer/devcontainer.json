@@ -1,0 +1,152 @@
+{
+  "containerUser": "vscode",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "terminal.integrated.profiles.linux": {
+          "bash": {
+            "path": "/bin/bash"
+          },
+          "pwsh": {
+            "path": "/opt/microsoft/powershell/7/pwsh"
+          },
+          "tmux": {
+            "args": [
+              "new-session",
+              "-A",
+              "-s",
+              "vscode:${workspaceFolder}"
+            ],
+            "path": "/usr/bin/tmux"
+          },
+          "zsh": {
+            "path": "/usr/bin/zsh"
+          }
+        }
+      }
+    }
+  },
+  "features": {
+    "ghcr.io/akhildevelops/devcontainer-features/pip": {
+      "packages": [
+        "ansible",
+        "ansible-creator",
+        "ansible-dev-environment"
+      ]
+    },
+    "ghcr.io/devcontainers-contrib/features/apt-packages": {
+      "packages": [
+        "cmake",
+        "dnsutils",
+        "dos2unix",
+        "file",
+        "iputils-ping",
+        "mtr",
+        "nmap",
+        "software-properties-common",
+        "tcpdump",
+        "ubuntu-drivers-common"
+      ]
+    },
+    "ghcr.io/devcontainers-contrib/features/curl-apt-get": {},
+    "ghcr.io/devcontainers-contrib/features/vscode-cli": {},
+    "ghcr.io/devcontainers-contrib/features/vscode-server": {},
+    "ghcr.io/devcontainers-contrib/features/wget-apt-get": {},
+    "ghcr.io/devcontainers-contrib/features/zsh-plugins": {
+      "omzPlugins": "https://github.com/zsh-users/zsh-autosuggestions.git https://github.com/zsh-users/zsh-syntax-highlighting.git https://github.com/conda-incubator/conda-zsh-completion.git https://github.com/z-shell/zsh-eza.git https://github.com/cda0/zsh-tfenv.git https://github.com/yuhonas/zsh-aliases-lsd.git",
+      "plugins": "zsh-syntax-highlighting zsh-autosuggestions zsh-interactive-cd ubuntu jsontools gh common-aliases zsh-aliases-lsd zsh-tfenv conda-zsh-completion z pip terraform fluxcd azure git-auto-fetch helm istioctl iterm2 kube-ps1 kubectl sudo vscode aws fzf"
+    },
+    "ghcr.io/devcontainers/features/anaconda": {},
+    "ghcr.io/devcontainers/features/aws-cli": {},
+    "ghcr.io/devcontainers/features/azure-cli": {
+      "extensions": "account,interactive",
+      "installBicep": "true"
+    },
+    "ghcr.io/devcontainers/features/common-utils": {
+      "configureZshAsDefaultShell": true,
+      "nonFreePackages": "true"
+    },
+    "ghcr.io/devcontainers/features/docker-outside-of-docker": {},
+    "ghcr.io/devcontainers/features/dotnet": {
+      "aspNetCoreRuntimeVersions": "latest",
+      "dotnetRuntimeVersions": "latest",
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/github-cli": {},
+    "ghcr.io/devcontainers/features/node": {},
+    "ghcr.io/devcontainers/features/powershell": {
+      "version": "7.4.2"
+    },
+    "ghcr.io/devcontainers/features/python": {
+      "installTools": true,
+      "version": "3.12"
+    },
+    "ghcr.io/guiyomh/features/vim": {},
+    "ghcr.io/hspaans/devcontainer-features/ansible-lint": {},
+    "ghcr.io/hwaien/devcontainer-features/match-host-time-zone": {},
+    "ghcr.io/joshuanianji/devcontainer-features/aws-cli-persistence": {},
+    "ghcr.io/joshuanianji/devcontainer-features/gcloud-cli-persistence": {},
+    "ghcr.io/joshuanianji/devcontainer-features/github-cli-persistence": {},
+    "ghcr.io/joshuanianji/devcontainer-features/terraform-cli-persistence": {},
+    "ghcr.io/jsburckhardt/devcontainer-features/gitleaks": {},
+    "ghcr.io/jungaretti/features/make": {},
+    "ghcr.io/prulloac/devcontainer-features/pre-commit": {},
+    "ghcr.io/robinmordasiewicz/features/zzz-preinstall-extensions": {
+      "extensions": [
+        "anderson.vscode-extension-paste-image",
+        "alexcvzz.vscode-sqlite",
+        "continue.continue",
+        "davidAnson.vscode-markdownlint",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "github.vscode-github-actions",
+        "github.vscode-pull-request-github",
+        "grapecity.gc-excelviewer",
+        "hashicorp.terraform",
+        "hediet.vscode-drawio",
+        "jeff-hykin.polacode-2019",
+        "lacework-security.lacework-code-security",
+        "mhutchie.git-graph",
+        "ms-cst-e.vscode-devskim",
+        "ms-kubernetes-tools.aks-devx-tools",
+        "ms-kubernetes-tools.vscode-aks-tools",
+        "ms-ossdata.vscode-postgresql",
+        "ms-python.debugpy",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.vscode-jupyter-powertoys",
+        "ms-vscode.azure-account",
+        "ms-vscode.azurecli",
+        "ms-vscode.vscode-node-azure-pack",
+        "ms-vscode.powershell",
+        "ms-vscode-remote.remote-ssh",
+        "msazurermtools.azurerm-vscode-tools",
+        "mtxr.sqltools",
+        "mtxr.sqltools-driver-pg",
+        "nhoizey.gremlins",
+        "nitayneeman.puppeteer-snippets",
+        "omartawfik.github-actions-vscode",
+        "postman.postman-for-vscode",
+        "redhat.ansible",
+        "richie5um2.vscode-sort-json",
+        "streetsidesoftware.code-spell-checker",
+        "timonwong.shellcheck",
+        "tomoyukim.vscode-mermaid-editor",
+        "weaveworks.vscode-gitops-tools",
+        "vsls-contrib.codetour",
+        "yzhang.markdown-all-in-one"
+      ]
+    },
+    "ghcr.io/stuartleeks/dev-container-features/shell-history": {}
+  },
+  "hostRequirements": {
+    "gpu": "optional"
+  },
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu22.04",
+  "initializeCommand": "docker pull mcr.microsoft.com/devcontainers/base:ubuntu22.04",
+  "name": "devcontainer",
+  "onCreateCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
+  "runArgs": [
+    "--hostname=devcontainer"
+  ]
+}

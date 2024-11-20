@@ -1,0 +1,20 @@
+{
+  "description": "devcontainer",
+  "id": "devcontainer",
+  "name": "devcontainer",
+  "options": {
+    "imageVariant": {
+      "default": "jammy",
+      "description": "Ubuntu 22.04 on amd64 or arm64 are available.",
+      "proposals": [
+        "jammy"
+      ],
+      "type": "string"
+    }
+  },
+  "platforms": [
+    "linux/amd64",
+    "linux/arm64"
+  ],
+  "version": "0.2.6"
+}
